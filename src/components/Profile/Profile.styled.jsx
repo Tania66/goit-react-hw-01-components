@@ -1,5 +1,8 @@
-.profile {
-  padding: 20px 0;
+import styled from "@emotion/styled";
+
+
+export const Container = styled.div`
+ padding: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,10 +15,12 @@
   );
   border: 2px solid #000;
   box-shadow: 0px 10px 10px 0px rgba(245, 245, 247, 0.1);
-}
+`;
 
-.description {
-  display: flex;
+
+
+export const Description = styled.div`
+display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -26,29 +31,24 @@
   padding-bottom: 15px;
   padding-top: 15px;
   margin-bottom: 20px;
-}
+`;
 
-.avatar {
+
+export const Avatar = styled.img`
   display: block;
   height: auto;
   width: 320px;
   margin-bottom: 15px;
-}
+`;
 
-.name {
-  color: #fff;
-}
 
-.tag {
-  color: #fff;
-}
+export const Info = styled.p`
+ color: #fff;
+`;
 
-.location {
-  color: #fff;
-}
 
-.stats {
-  display: flex;
+export const List = styled.ul`
+ display: flex;
   justify-content: space-between;
   list-style: none;
   align-items: center;
@@ -58,20 +58,23 @@
   border: 2px solid #f6f6f6;
   background: #202024;
   padding: 15px;
-}
 
-.label {
+`;
+
+
+export const Label = styled.span`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 5px;
   color: #fff;
-}
+`;
 
-.quantity {
+
+export const Quantity = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-}
+`;

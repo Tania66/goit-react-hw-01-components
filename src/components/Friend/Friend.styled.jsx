@@ -1,21 +1,23 @@
-.friend {
-  margin: 20px 0;
+import styled from "styled-components";
+
+export const Container = styled.div`
+ margin: 20px 0;
   border-radius: 16px;
   border: 2px solid #4f2ee8;
   background: #ffff;
   padding: 20px;
-}
+`;
 
-.friendList {
+export const List = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
-}
+`;
 
-.item {
-  position: relative;
+export const Item = styled.li`
+ position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,9 +29,9 @@
   padding: 10px;
   border: 3px solid #f3ff2f;
   box-shadow: 0px 4px 46px 0px rgba(0, 0, 0, 0.05);
-}
+`;
 
-.online {
+export const Online = styled.span`
   position: absolute;
   top: 31px;
   left: 61px;
@@ -37,14 +39,19 @@
   width: 10px;
   height: 10px;
   background-color: green;
-}
+`;
 
-.ofline {
-  position: absolute;
+
+export const Ofline = styled.span`
+   position: absolute;
   top: 31px;
   left: 61px;
   border-radius: 50px;
   width: 10px;
   height: 10px;
   background-color: red;
-}
+`;
+
+export const Avatar = styled.img`
+
+`;
